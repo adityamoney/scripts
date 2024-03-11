@@ -2,6 +2,8 @@
 
 username=$(whoami)
 echo "Hello, $username"
+echo "Please give r,w,x permission to this file"
+echo "If you did not run this script with sudo please stop this and run with sudo"
 echo "You have this much storage available in your system"
 df -h / | tail -1 | awk '{print $4}'
 echo "We will use some space from this to increase your memory on your input"
